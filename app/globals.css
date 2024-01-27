@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-hsl: 0, 0%, 93%;
+  --foreground-secondary-hsl: 0, 0%, 63%;
+  --foreground-teritary-hsl: 0, 0%, 53%;
+
+  --background-hsl: 0, 0%, 0%;
+  --background-secondary-hsl: 0, 0%, 4%;
+  --background-teritary-hsl: 0, 0%, 12%;
+
+  --border-hsla: 217, 95%, 91%, 0.192;
+  --ascend-hsl: 206, 100%, 50%;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+  background-color: hsl(var(--background-hsl));
+  font-synthesis-weight: none;
+  color: hsl(var(--foreground-hsl));
+}
+
+body,
+button {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background-color: hsla(var(--foreground-hsl), 1);
+  -webkit-text-fill-color: hsla(var(--background-hsl), 1);
+  color: hsla(var(--background-hsl), 1);
+}
