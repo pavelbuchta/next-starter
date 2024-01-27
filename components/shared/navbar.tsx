@@ -1,11 +1,6 @@
 "use client";
 
-import {
-  APP_NAME,
-  CONTACT_URL,
-  MAX_CONTENT_WIDTH,
-  PORTAL_URL,
-} from "@/lib/constants";
+import { APP_NAME, MAX_CONTENT_WIDTH } from "@/lib/constants";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
@@ -65,11 +60,11 @@ export default function Navbar() {
           <NavItem href={"#happy-clients"}>Happy Clients</NavItem>
         </ul>
         <ul className="flex items-center justify-end gap-6 md:w-[200px]">
-          <NavItem className={"max-sm:hidden"} blank href={PORTAL_URL}>
+          <NavItem className={"max-sm:hidden"} blank href={"/signin"}>
             Sign in
           </NavItem>
           <li>
-            <Link href={CONTACT_URL} rel="noopener noreferrer" target="_blank">
+            <Link href={"/contact"} rel="noopener noreferrer" target="_blank">
               <Button text="Get started" variant="primary" icon />
             </Link>
           </li>
